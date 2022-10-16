@@ -12,4 +12,6 @@ do
 {
     count = count + 2;
     Console.Write(count + ", ");
-} while (count < (firstNum - 1));
+} while (count < (firstNum - 3));
+count = count + 2;
+    Console.Write(count + " ");
