@@ -2,11 +2,9 @@
 Console.WriteLine("Привет, введите число: ");
 string strNum1 = Console.ReadLine();
 int firstNum = Convert.ToInt32(strNum1);
-if ((firstNum%2) == 0)
+int count = 0;
+do
 {
-    Console.WriteLine(firstNum + " - чётное число");
-}
-else 
-{
-    Console.WriteLine(firstNum + " - нечётное число");
-}
+    count = count + 2;
+    Console.Write(count + ", ");
+} while (count < (firstNum - 1));
