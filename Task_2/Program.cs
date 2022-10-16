@@ -1,4 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
+/*
+Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
+*/
+
 Console.WriteLine("Привет, введите первое число: ");
 string strNum1 = Console.ReadLine();
 int firstNum = Convert.ToInt32(strNum1);
