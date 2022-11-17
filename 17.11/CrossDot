@@ -1,0 +1,31 @@
+/*
+Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых,
+заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
+b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
+*/
+
+//methods
+int InpMessage(string message) // просим ввести данные
+{
+    Console.WriteLine(message);
+    return Convert.ToInt32(Console.ReadLine());
+}
+
+void FindCrossDot(int arg1, int arg2, int arg3, int arg4) // ищем точку пересечения
+{
+    double y = 0;
+    double x = (arg1-y-arg3+y)/(-arg2+arg4);
+    if(arg2*x+arg1 == arg4*x+arg3)
+    {
+        y = arg2*x+arg1;
+        Console.WriteLine($"b1 = {arg1}, k1 = {arg2}, b2 = {arg3}, k2 = {arg4} -> ({x}; {y})");
+    }
+    else Console.WriteLine("Прямые не пересекаются");
+}
+//end of methods
+
+int b1 = InpMessage("Введите b1");
+int k1 = InpMessage("Введите k1");
+int b2 = InpMessage("Введите b2");
+int k2 = InpMessage("Введите k2");
+FindCrossDot(b1, k1, b2, k2);
